@@ -7,9 +7,9 @@
 <body ng-app="simulator" ng-controller="wordController">
 	<header> <h1> Random Word Generator </h1> </header>
 <div class="buttons">
-	<button id="words" ng-click="addWord()"> Words </button>
+	<button id="words" ng-click="addWord()"> Words</button>
 	<button ng-click="decoratedWord()"> Words (with decoration) </button>
-	<button ng-click=""> More Words </button>
+	<button ng-click="moreWords()"> More Words </button>
 	<button ng-click=""> More Words (with decoration) </button>
 </div>
 	<span ng-repeat="word in words track by $index" ng-class="word.style">{{word.text}} </span>

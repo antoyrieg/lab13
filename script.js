@@ -11,15 +11,21 @@ console.log("hello");
  	// take words from "random" array
  	//add words to view AND words array
 	$scope.addWord = function () {
-  $scope.words.push($scope.random[Math.floor(Math.random()*5)])
+		var randomWord = $scope.random[Math.floor(Math.random()*5)];
+		var newObject = {text: randomWord.text};
+  	$scope.words.push(newObject);
+	}
+
+	$scope.decoratedWord = function(){
+	$scope.words.push($scope.random[Math.floor(Math.random()*5)])
 	console.log("hi");
+	}
+
+	$scope.moreWords = function(){
+		var randomWord = $scope.random[Math.floor(Math.random(2)*5)];
+		var newObject = {text: randomWord.text};
+  	$scope.words.push(newObject);
 
 	}
 
-$scope.decoratedWord = function(){
-	$scope.words.push($scope.random[Math.floor(Math.random()*5)])
-	console.log("hi");
-
-}
-
-	});
+});

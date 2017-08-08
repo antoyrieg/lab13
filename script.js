@@ -11,7 +11,6 @@ console.log("hello");
  	// take words from "random" array
  	//add words to view AND words array
 	$scope.addWord = function () {
-
   $scope.words.push($scope.random[Math.floor(Math.random()*5)])
 	console.log("hi");
 

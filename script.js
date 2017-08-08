@@ -12,7 +12,7 @@ console.log("hello");
  	//add words to view AND words array				 
 	$scope.addWord = function () {
   var x = "";
-  	x.word=random.text[Math.floor(Math.random() * random.length)];
+  	x.item=random[Math.floor(Math.random() * random.length)];
   $scope.words.push(x);
   
   //$scope.words.push($scope.random[Math.floor(Math.random()*5)])
@@ -20,7 +20,7 @@ console.log("hello");
 		
 	
 	
-	}	
+	};	
 	
 	
 	

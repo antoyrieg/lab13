@@ -1,0 +1,20 @@
+body {
+	background-image: url('bg.jpg');
+	    background-size: 100%;
+}	
+
+header {
+	text-align: center;
+}
+
+.buttons {
+	text-align: center;
+}
+
+button {
+	font-size: 20px;
+    border-radius: 20px;
+    background-color: orange;
+    border: none;
+    box-shadow: 1px 2px 3px black;
+}	
